@@ -44,3 +44,11 @@ project1/
 │── .gitignore
 │── README.md
 │── LICENSE
+```
+---
+
+## Snapshots for Reference
+
+<img width="945" height="517" alt="image" src="https://github.com/user-attachments/assets/5f05c6b4-b8ea-449a-84e4-5f4e9fddb948" />
+<img width="945" height="493" alt="image" src="https://github.com/user-attachments/assets/878c297e-4d25-4450-9044-db44de58e76e" />
+
