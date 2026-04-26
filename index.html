@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Math Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">∑</div>
+        <div>
+          <p class="eyebrow">AI Math</p>
+          <h1>Assistant</h1>
+        </div>
+      </div>
+
+      <div class="status-card">
+        <span class="status-dot"></span>
+        <div>
+          <strong>Ready</strong>
+          <p>Symbolic math, calculus, trig, matrices and arithmetic.</p>
+        </div>
+      </div>
+
+      <nav class="tool-list" aria-label="Supported tools">
+        <button class="tool active" data-example="Simplify (x**2 + 2*x + 1)/(x+1)">Simplify</button>
+        <button class="tool" data-example="Expand (x+1)*(x+2)">Expand</button>
+        <button class="tool" data-example="Factor x**2 + 3*x + 2">Factor</button>
+        <button class="tool" data-example="Solve x**2 - 5*x + 6 = 0 for x">Equations</button>
+        <button class="tool" data-example="Derivative of x**3 + 2*x with respect to x">Derivative</button>
+        <button class="tool" data-example="Integral of x**2 with respect to x">Integral</button>
+        <button class="tool" data-example="Definite integral of x**2 from 0 to 2 with respect to x">Definite Integral</button>
+        <button class="tool" data-example="Limit of sin(x)/x as x approaches 0">Limits</button>
+        <button class="tool" data-example="Evaluate sin(30) in degrees">Trigonometry</button>
+        <button class="tool" data-example="Simplify sin(x)**2 + cos(x)**2">Trig Simplify</button>
+        <button class="tool" data-example="Calculate 18 * 24">Arithmetic</button>
+        <button class="tool" data-example="Find determinant of [[1,2],[3,4]]">Determinant</button>
+        <button class="tool" data-example="Find inverse of [[1,2],[3,4]]">Matrix Inverse</button>
+        <button class="tool" data-example="Find eigenvalues of [[1,2],[3,4]]">Eigenvalues</button>
+      </nav>
+    </aside>
+
+    <main class="main-panel">
+      <header class="page-header">
+        <p class="eyebrow">Powered by LangChain + SymPy</p>
+        <h2>MathMate AI</h2>
+        <p class="hero-copy">Ask for algebraic simplification, derivatives, integrals, limits, trigonometric evaluation, matrix operations, or basic arithmetic.</p>
+      </header>
+
+      <section class="chat-card">
+        <div class="chat-header">
+          <div>
+            <h3>Math Workspace</h3>
+            <p>Type a problem below and press Enter.</p>
+          </div>
+          <button id="clearChat" class="ghost-button">Clear</button>
+        </div>
+
+        <div id="chatWindow" class="chat-window" aria-live="polite">
+          <div class="message assistant">
+            <div class="avatar">AI</div>
+            <div class="bubble welcome-bubble">
+              <p>Welcome! Try: <button class="inline-example" data-example="Solve x**2 - 5*x + 6 = 0 for x">Solve x**2 - 5*x + 6 = 0 for x</button></p>
+        </div>
+          </div>
+        </div>
+
+        <form id="mathForm" class="composer">
+          <textarea id="promptInput" rows="1" placeholder="Ask a math question..." autocomplete="off"></textarea>
+          <button type="submit" aria-label="Send prompt">Send</button>
+        </form>
+      </section>
+
+      <footer class="site-footer"><span>✦ Made by Aditya Patil ✦</span></footer>   
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

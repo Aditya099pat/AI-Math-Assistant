@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -207,3 +208,11 @@ marimo/_lsp/
 __marimo__/
 
 .vscode/
+=======
+@"
+.env
+.venv/
+__pycache__/
+*.pyc
+"@ | Set-Content .gitignore
+>>>>>>> a2a7a54 (Add frontend and FastAPI backend integration)
