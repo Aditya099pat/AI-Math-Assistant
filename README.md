@@ -6,6 +6,14 @@ AI Math Assistant is a full-stack web application that solves math problems usin
 
 ![AI Math Assistant Screenshot](Assets/Screenshot%202026-04-27%20042647.png)
 
+## Live Preview
+
+```text
+https://aditya099pat.github.io/Neon-Aura-AR/
+```
+
+---
+
 ## Demo Video
 
 [Watch Demo Video](Assets/AI%20Math%20Assistant.mp4)
