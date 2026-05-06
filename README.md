@@ -9,7 +9,7 @@ AI Math Assistant is a full-stack web application that solves math problems usin
 ## Live Preview
 
 ```text
-[https://aditya099pat.github.io/Neon-Aura-AR/](https://aditya099pat.github.io/AI-Math-Assistant/)
+https://aditya099pat.github.io/AI-Math-Assistant/
 ```
 
 ---
